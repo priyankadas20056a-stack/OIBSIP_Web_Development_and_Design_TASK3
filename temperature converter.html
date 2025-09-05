@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+ <link rel="stylesheet" href="temperature converter.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+
+</head>
+<body>
+  
+    <center>
+        <div id="heading">
+    <h1 ><div id="h1_1"> <span id="logo"><i class="fa-solid fa-thermometer-half"></i></span>
+   Temperature</div><div id="h1_2">Converter</div><div id="h1_3">Website</div></h1></div>
+    <div class="box">
+        <h1  >Temperature Converter </h1>
+
+       
+        <input type="text" id="tempInput" placeholder="Enter temperature">     <!-- Input for temperature -->
+
+        
+        <select id="unit_Inputs">
+            <option value="Celsius">Celsius</option>          <!-- Dropdown to select input unit  -->
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+       
+        
+        <select id="unit_Outputs">         <!-- Dropdown to select target unit for convertion -->
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+
+        
+        <button onclick="convertTemperature()" id="button">Convert</button>  <!-- Convert button -->
+
+        
+       
+        <input type="text" id="output" placeholder="result">      <!-- Display result -->
+         
+    </div>
+       </center>
+    <script src="temperature converter.js"></script>
+ 
+</body>
+</html>
